@@ -51,6 +51,7 @@ body {
   max-width: 1462px;
   padding-right: 32px;
   padding-left: 32px;
+  margin: 0 auto;
 }
 /* Header */
 nav {
@@ -68,7 +69,7 @@ nav {
   background-color: transparent;
   outline: transparent;
   padding-top: 60px;
-  padding-bottom: 100px;
+  padding-bottom: 200px;
 }
 .logo {
   font-family: "Chronicle Display", sans-serif;
@@ -100,6 +101,9 @@ nav {
   color: #fff;
 }
 /* Hero */
+.hero-wrapper {
+  position: relative;
+}
 .hero-title {
   font-family: "Chronicle Display", sans-serif;
   font-weight: 600;
@@ -107,6 +111,13 @@ nav {
   line-height: 1.13636;
   text-transform: capitalize;
   color: #fff;
+  margin-bottom: 32px;
+}
+.sub-title-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
 }
 .sub-title {
   font-family: "Gilroy", sans-serif;
@@ -115,14 +126,44 @@ nav {
   letter-spacing: 0.33em;
   text-transform: uppercase;
 }
-.sub-box {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-.line {
+.sub-title-line {
   width: 72px;
   height: 2px;
   border-color: #fbd784;
   margin: 0 32px 0 0;
+}
+.hero-title-box {
+  /* width: 950px; */
+  width: 980px;
+  margin: 0 auto;
+}
+.hero-scroll-box {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.hero-scroll {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+}
+.hero-icon {
+  fill: #fff;
+}
+.hero-follow-box {
+  position: absolute;
+  top: 72px;
+  display: inline-flex; /* Важливо для правильного обертання */
+  transform: rotate(90deg); /* Поворот тексту */
+  transform-origin: left top; /* Точка обертання */
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  gap: 24px;
+}
+.hero-follow-icons {
+  fill: #fff;
+  transform: rotate(-90deg); /* Поворот тексту */
 }

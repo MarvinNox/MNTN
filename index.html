@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MNTN</title>
     <link
+      href="./fonts/Gilroy/stylesheet.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/chronicle-display"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
     />
@@ -32,14 +41,36 @@
       </div>
     </header>
     <main>
-      <section class="hero">
+      <section class="hero-wrapper">
         <div class="container">
-          <div class="sub-box">
-            <hr class="line" />
-            <span class="sub-title accent">A Hiking guide</span>
+          <div class="hero-follow-box">
+            <a href="#" class="hero-follow-link">Follow us</a>
+            <svg width="24px" height="24px" class="hero-follow-icons">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+            <svg width="24px" height="24px" class="hero-follow-icons">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
           </div>
-          <h1 class="hero-title">Be prepared for the Mountains and beyond!</h1>
+          <div class="hero-title-box">
+            <div class="sub-title-box">
+              <hr class="sub-title-line" />
+              <span class="sub-title accent">A Hiking guide</span>
+            </div>
+            <h1 class="hero-title">
+              Be prepared for the Mountains and beyond!
+            </h1>
+            <div class="hero-scroll-box">
+              <a href="" class="hero-scroll">scroll down </a
+              ><svg width="16px" height="24px" class="hero-icon">
+                <use href="./images/icons.svg#icon-arrow_down"></use>
+              </svg>
+            </div>
+          </div>
         </div>
+      </section>
+      <section class="started-wrapper">
+        <div class="container"></div>
       </section>
     </main>
   </body>
