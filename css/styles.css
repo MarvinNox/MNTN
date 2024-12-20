@@ -53,6 +53,11 @@ body {
   padding-left: 32px;
   margin: 0 auto;
 }
+.flexy {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 /* Header */
 nav {
   display: flex;
@@ -166,4 +171,53 @@ nav {
 .hero-follow-icons {
   fill: #fff;
   transform: rotate(-90deg); /* Поворот тексту */
+}
+/* First Section ---- Get Started */
+.started-wrapper {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.section-box {
+  position: relative;
+  max-width: 632px;
+  margin-left: 150px;
+}
+.section-box-sec {
+  position: relative;
+  max-width: 632px;
+  margin-left: 264px;
+}
+.secondary-title {
+  font-family: "Chronicle Display", sans-serif;
+  font-weight: 600;
+  font-size: 64px;
+  margin-bottom: 28px;
+}
+.title-counter {
+  position: absolute;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  font-size: 240px;
+  line-height: 1;
+  color: #fff;
+  opacity: 0.1;
+  top: -120px;
+  left: -150px;
+}
+.section-txt {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.77778;
+  color: #fff;
+  padding-bottom: 28px;
+}
+.section-read_more {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fbd784;
+}
+.read-more-icon {
+  fill: #fbd784;
 }
