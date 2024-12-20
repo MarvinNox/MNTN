@@ -18,6 +18,24 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./images/favicon/site.webmanifest" />
   </head>
   <body>
     <header class="header-wrapper">
@@ -25,9 +43,9 @@
         <a href="./index.html" class="logo">MNTN</a>
         <nav>
           <ul class="header-nav">
-            <li><a class="header-nav-links" href="#">Equipment</a></li>
-            <li><a class="header-nav-links" href="#">About us</a></li>
-            <li><a class="header-nav-links" href="#">Blog</a></li>
+            <li class="header-nav-links"><a href="#">Equipment</a></li>
+            <li class="header-nav-links"><a href="#">About us</a></li>
+            <li class="header-nav-links"><a href="#">Blog</a></li>
           </ul>
         </nav>
         <div class="header-account">
@@ -42,9 +60,9 @@
     </header>
     <main>
       <section class="hero-wrapper">
-        <div class="container">
+        <div class="header-container">
           <div class="hero-follow-box">
-            <a href="#" class="hero-follow-link">Follow us</a>
+            <a href="#" class="hero-follow-box-link">Follow us</a>
             <svg width="24px" height="24px" class="hero-follow-icons">
               <use href="./images/icons.svg#icon-instagram"></use>
             </svg>
@@ -61,10 +79,14 @@
               Be prepared for the Mountains and beyond!
             </h1>
             <div class="hero-scroll-box">
-              <a href="#" class="hero-scroll">scroll down </a
-              ><svg width="16px" height="24px" class="hero-icon">
-                <use href="./images/icons.svg#icon-arrow_down"></use>
-              </svg>
+              <a href="#" class="hero-scroll"
+                >scroll down
+                <div class="hero-icon">
+                  <svg width="16px" height="24px">
+                    <use href="./images/icons.svg#icon-arrow_down"></use>
+                  </svg>
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -87,10 +109,14 @@
               backpacker?
             </p>
             <div class="hero-scroll-box">
-              <a href="#" class="section-read_more">read more</a
-              ><svg width="24px" height="16px" class="read-more-icon">
-                <use href="./images/icons.svg#icon-arrow"></use>
-              </svg>
+              <a href="#" class="section-read_more"
+                >read more
+                <div class="read-more-icon">
+                  <svg width="24px" height="16px">
+                    <use href="./images/icons.svg#icon-arrow"></use>
+                  </svg>
+                </div>
+              </a>
             </div>
           </div>
           <img
@@ -124,10 +150,14 @@
               get heavy and chafe wif they get sweaty or wet.
             </p>
             <div class="hero-scroll-box">
-              <a href="#" class="section-read_more">read more</a
-              ><svg width="24px" height="16px" class="read-more-icon">
-                <use href="./images/icons.svg#icon-arrow"></use>
-              </svg>
+              <a href="#" class="section-read_more"
+                >read more
+                <div class="read-more-icon">
+                  <svg width="24px" height="16px">
+                    <use href="./images/icons.svg#icon-arrow"></use>
+                  </svg>
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -149,10 +179,14 @@
               know that say, in a mile, I make a right turn at the junction..
             </p>
             <div class="hero-scroll-box">
-              <a href="#" class="section-read_more">read more</a
-              ><svg width="24px" height="16px" class="read-more-icon">
-                <use href="./images/icons.svg#icon-arrow"></use>
-              </svg>
+              <a href="#" class="section-read_more"
+                >read more
+                <div class="read-more-icon">
+                  <svg width="24px" height="16px">
+                    <use href="./images/icons.svg#icon-arrow"></use>
+                  </svg>
+                </div>
+              </a>
             </div>
           </div>
           <img
@@ -170,6 +204,7 @@
             <p class="footer-txt">
               Get out there & discover your next slope, mountain & destination!
             </p>
+            <p class="footer-copy">Copyright 2023 MNTN, Inc. Terms & Privacy</p>
           </div>
           <nav class="footer-nav">
             <p class="footer-title">More on The Blog</p>

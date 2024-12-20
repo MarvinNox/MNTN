@@ -91,6 +91,11 @@ nav {
   font-family: "Gilroy", sans-serif;
   font-weight: 700;
   font-size: 18px;
+  transition: transform 250ms ease-in-out, box-shadow 250ms ease-in-out;
+}
+.header-nav-links:hover {
+  color: #fbd784;
+  transform: translatey(-3px);
 }
 .header-account {
   display: inline-flex;
@@ -113,7 +118,7 @@ nav {
   font-family: "Chronicle Display", sans-serif;
   font-weight: 600;
   font-size: 88px;
-  line-height: 1.13636;
+  line-height: 1.14;
   text-transform: capitalize;
   color: #fff;
   margin-bottom: 32px;
@@ -145,32 +150,52 @@ nav {
 .hero-scroll-box {
   display: flex;
   align-items: center;
-  gap: 16px;
 }
 .hero-scroll {
   font-family: "Gilroy", sans-serif;
   font-weight: 700;
   font-size: 18px;
   color: #fff;
+  display: flex;
+  transition: transform 300ms ease-in-out, color 300ms ease-in-out;
 }
 .hero-icon {
+  margin-left: 16px;
   fill: #fff;
+  transition: fill 300ms ease-in-out;
+}
+.hero-scroll:hover {
+  color: #fbd784;
+  transform: translatey(5px);
+}
+.hero-scroll:hover .hero-icon {
+  fill: #fbd784;
 }
 .hero-follow-box {
   position: absolute;
   top: 72px;
-  display: inline-flex; /* Важливо для правильного обертання */
-  transform: rotate(90deg); /* Поворот тексту */
-  transform-origin: left top; /* Точка обертання */
+  display: inline-flex;
+  transform: rotate(90deg);
+  transform-origin: left top;
+  gap: 24px;
+}
+.hero-follow-box-link {
   font-family: "Gilroy", sans-serif;
   font-weight: 700;
   font-size: 18px;
   color: #fff;
-  gap: 24px;
+  transition: transform 300ms ease-in-out;
 }
 .hero-follow-icons {
   fill: #fff;
-  transform: rotate(-90deg); /* Поворот тексту */
+  transform: rotate(-90deg);
+  transition: transform 300ms ease-in-out;
+}
+.hero-follow-box-link:hover {
+  transform: scale(1.1) translateY(-5px);
+}
+.hero-follow-icons:hover {
+  transform: scale(1.2) rotate(-90deg) translate(5px);
 }
 /* First Section ---- Get Started */
 .started-wrapper {
@@ -208,7 +233,7 @@ nav {
   font-family: "Gilroy", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.77778;
+  line-height: 1.78;
   color: #fff;
   padding-bottom: 28px;
 }
@@ -217,9 +242,18 @@ nav {
   font-weight: 700;
   font-size: 18px;
   color: #fbd784;
+  display: flex;
+  align-items: center;
+  transition: transform 350ms ease-in-out;
 }
 .read-more-icon {
+  display: flex;
+  align-self: center;
+  margin-left: 16px;
   fill: #fbd784;
+}
+.section-read_more:hover {
+  transform: translateX(5px);
 }
 /* footer */
 .footer-wrapper {
@@ -227,13 +261,13 @@ nav {
   padding-bottom: 120px;
 }
 .footer-logo-box {
-  width: 303px;
+  width: 350px;
 }
 .footer-title {
   font-family: "Gilroy", sans-serif;
   font-weight: 700;
   font-size: 24px;
-  line-height: 1.33333;
+  line-height: 1.33;
   color: #fbd784;
   font-style: normal;
   margin-bottom: 24px;
@@ -242,17 +276,22 @@ nav {
   font-family: "Gilroy", sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.77778;
+  line-height: 1.78;
   color: #fff;
   margin-top: 24px;
+  width: 303px;
 }
 .footer-links {
   font-family: "Gilroy", sans-serif;
   font-weight: 500;
   font-size: 18px;
-  line-height: 1.77778;
+  line-height: 1.78;
   color: #fff;
   font-style: normal;
+  transition: color 250ms ease-in-out;
+}
+.footer-links:hover {
+  color: #fbd784;
 }
 .footer-list {
   display: flex;
@@ -268,4 +307,13 @@ nav {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+}
+.footer-copy {
+  margin-top: 122px;
+  opacity: 0.5;
+  font-family: "Gilroy", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.78;
+  color: #fff;
 }
