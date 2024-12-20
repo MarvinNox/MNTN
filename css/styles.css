@@ -97,6 +97,9 @@ nav {
   color: #fbd784;
   transform: translatey(-3px);
 }
+.header-nav-links:active {
+  transform: translateY(1px);
+}
 .header-account {
   display: inline-flex;
 }
@@ -109,10 +112,21 @@ nav {
   font-weight: 700;
   font-size: 17px;
   color: #fff;
+  transition: transform 150ms ease-in-out, color 250ms ease-in-out,
+    fill 250ms ease-in-out;
+}
+.header-account-link:hover {
+  transform: scale(1.05);
+  color: #fbd784;
+  fill: #fbd784;
+}
+.header-account-link:active {
+  transform: translateY(3px);
 }
 /* Hero */
 .hero-wrapper {
   position: relative;
+  margin-bottom: 200px;
 }
 .hero-title {
   font-family: "Chronicle Display", sans-serif;
@@ -166,7 +180,10 @@ nav {
 }
 .hero-scroll:hover {
   color: #fbd784;
-  transform: translatey(5px);
+  transform: translateY(3px);
+}
+.hero-scroll:active {
+  transform: translateY(5px);
 }
 .hero-scroll:hover .hero-icon {
   fill: #fbd784;
@@ -254,6 +271,9 @@ nav {
 }
 .section-read_more:hover {
   transform: translateX(5px);
+}
+.section-read_more:active {
+  transform: translateX(3px);
 }
 /* footer */
 .footer-wrapper {
