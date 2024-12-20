@@ -221,3 +221,51 @@ nav {
 .read-more-icon {
   fill: #fbd784;
 }
+/* footer */
+.footer-wrapper {
+  padding-top: 100px;
+  padding-bottom: 120px;
+}
+.footer-logo-box {
+  width: 303px;
+}
+.footer-title {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.33333;
+  color: #fbd784;
+  font-style: normal;
+  margin-bottom: 24px;
+}
+.footer-txt {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.77778;
+  color: #fff;
+  margin-top: 24px;
+}
+.footer-links {
+  font-family: "Gilroy", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.77778;
+  color: #fff;
+  font-style: normal;
+}
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer-wrapper .container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
